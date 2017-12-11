@@ -1,18 +1,18 @@
-# TCPÐ­ÒéÏÂÍê³É¿Í»§¶ËÓë·þÎñ¶ËµÄÁ¬½Ó
+# TCPåè®®ä¸‹å®Œæˆå®¢æˆ·ç«¯ä¸ŽæœåŠ¡ç«¯çš„è¿žæŽ¥
 
->ÒÀ¾ÝTCPÐ­Òé£¬ÔÚC/S¼Ü¹¹µÄÍ¨Ñ¶¹ý³ÌÖÐ£¬¿Í»§¶ËºÍ·þÎñÆ÷µÄSocket¶¯×÷ÈçÏÂ£º
+>ä¾æ®TCPåè®®ï¼Œåœ¨C/Sæž¶æž„çš„é€šè®¯è¿‡ç¨‹ä¸­ï¼Œå®¢æˆ·ç«¯å’ŒæœåŠ¡å™¨çš„SocketåŠ¨ä½œå¦‚ä¸‹ï¼š
 
-##¿Í»§¶Ë£º
+## å®¢æˆ·ç«¯ï¼š
 
-1.ÓÃ·þÎñÆ÷µÄIPµØÖ·ºÍ¶Ë¿ÚºÅÊµÀý»¯Socket¶ÔÏó¡£
-2.µ÷ÓÃconnect·½·¨£¬Á¬½Óµ½·þÎñÆ÷ÉÏ¡£
-3.½«·¢ËÍµ½·þÎñÆ÷µÄIOÁ÷Ìî³äµ½IO¶ÔÏóÀï£¬±ÈÈçBufferedReader/PrintWriter¡£
-4.ÀûÓÃSocketÌá¹©µÄgetInputStreamºÍgetOutputStream·½·¨£¬Í¨¹ýIOÁ÷¶ÔÏó£¬Ïò·þÎñÆ÷·¢ËÍÊý¾ÝÁ÷¡£
-5. Í¨Ñ¶Íê³Éºó£¬¹Ø±Õ´ò¿ªµÄIO¶ÔÏóºÍSocket¡£
+1.ç”¨æœåŠ¡å™¨çš„IPåœ°å€å’Œç«¯å£å·å®žä¾‹åŒ–Socketå¯¹è±¡ã€‚
+2.è°ƒç”¨connectæ–¹æ³•ï¼Œè¿žæŽ¥åˆ°æœåŠ¡å™¨ä¸Šã€‚
+3.å°†å‘é€åˆ°æœåŠ¡å™¨çš„IOæµå¡«å……åˆ°IOå¯¹è±¡é‡Œï¼Œæ¯”å¦‚BufferedReader/PrintWriterã€‚
+4.åˆ©ç”¨Socketæä¾›çš„getInputStreamå’ŒgetOutputStreamæ–¹æ³•ï¼Œé€šè¿‡IOæµå¯¹è±¡ï¼Œå‘æœåŠ¡å™¨å‘é€æ•°æ®æµã€‚
+5. é€šè®¯å®ŒæˆåŽï¼Œå…³é—­æ‰“å¼€çš„IOå¯¹è±¡å’ŒSocketã€‚
 
-## ·þÎñÆ÷£º
-1. ÔÚ·þÎñÆ÷£¬ÓÃÒ»¸ö¶Ë¿ÚÀ´ÊµÀý»¯Ò»¸ö ServerSocket¶ÔÏó¡£´ËÊ±£¬·þÎñÆ÷¾Í¿ÉÒÔÕâ¸ö¶Ë¿ÚÊ±¿Ì¼àÌý
-´Ó¿Í»§¶Ë·¢À´µÄÁ¬½ÓÇëÇó¡£
-2.µ÷ÓÃServerSocketµÄaccept·½·¨£¬¿ªÊ¼¼àÌýÁ¬½Ó´Ó¶Ë¿ÚÉÏ·¢À´µÄÁ¬½ÓÇëÇó¡£ ¡¡¡¡
-3.ÀûÓÃaccept·½·¨·µ»ØµÄ¿Í»§¶ËµÄSocket¶ÔÏó£¬½øÐÐ¶ÁÐ´IOµÄ²Ù×÷
-Í¨Ñ¶Íê³Éºó£¬¹Ø±Õ´ò¿ªµÄÁ÷ºÍSocket¶ÔÏó¡£
+## æœåŠ¡å™¨ï¼š
+1. åœ¨æœåŠ¡å™¨ï¼Œç”¨ä¸€ä¸ªç«¯å£æ¥å®žä¾‹åŒ–ä¸€ä¸ª ServerSocketå¯¹è±¡ã€‚æ­¤æ—¶ï¼ŒæœåŠ¡å™¨å°±å¯ä»¥è¿™ä¸ªç«¯å£æ—¶åˆ»ç›‘å¬
+ä»Žå®¢æˆ·ç«¯å‘æ¥çš„è¿žæŽ¥è¯·æ±‚ã€‚
+2.è°ƒç”¨ServerSocketçš„acceptæ–¹æ³•ï¼Œå¼€å§‹ç›‘å¬è¿žæŽ¥ä»Žç«¯å£ä¸Šå‘æ¥çš„è¿žæŽ¥è¯·æ±‚ã€‚ ã€€ã€€
+3.åˆ©ç”¨acceptæ–¹æ³•è¿”å›žçš„å®¢æˆ·ç«¯çš„Socketå¯¹è±¡ï¼Œè¿›è¡Œè¯»å†™IOçš„æ“ä½œ
+é€šè®¯å®ŒæˆåŽï¼Œå…³é—­æ‰“å¼€çš„æµå’ŒSocketå¯¹è±¡ã€‚
