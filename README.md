@@ -7,3 +7,5 @@ JVM内存参数优化）、Java泛型等
 3. [JAVA API](http://tool.oschina.net/apidocs/apidoc?api=jdk-zh)
 
 4. [hashCode如何理解](http://blog.csdn.net/pozmckaoddb/article/details/47447429)
+
+5. [go算法](http://m.blog.csdn.net/l1028386804/article/details/51097928)
