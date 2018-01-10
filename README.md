@@ -9,3 +9,5 @@ JVM内存参数优化）、Java泛型等
 4. [hashCode如何理解](http://blog.csdn.net/pozmckaoddb/article/details/47447429)
 
 5. [go算法](http://m.blog.csdn.net/l1028386804/article/details/51097928)
+
+6. [String类常用方法](http://blog.csdn.net/zhaofang_jy/article/details/21107551)
