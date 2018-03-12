@@ -14,4 +14,4 @@ JVM内存参数优化）、Java泛型等
 
 7. [Java Servelet](https://www.cnblogs.com/kebibuluan/p/8290171.html)
 
-8.[String类深入理解](http://blog.csdn.net/stanxl/article/details/42360689)
+8. [String类深入理解](http://blog.csdn.net/stanxl/article/details/42360689)
