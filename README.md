@@ -16,4 +16,6 @@ JVM内存参数优化）、Java泛型等
 
 8. [String类深入理解](http://blog.csdn.net/stanxl/article/details/42360689)
 
-9. [Random源码分析](http://blog.csdn.net/qq_28282317/article/details/52985774)
+9. 
+    - [Random源码分析](http://blog.csdn.net/qq_28282317/article/details/52985774)
+    - [Random种子含义](http://blog.sina.com.cn/s/blog_64d5f4bd0100h0zz.html)
