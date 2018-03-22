@@ -21,3 +21,5 @@ JVM内存参数优化）、Java泛型等
     - [Random种子含义](http://blog.sina.com.cn/s/blog_64d5f4bd0100h0zz.html)
     
 10. [StringBuffer和StringBuider源码分析](http://www.jb51.net/article/78057.htm)
+
+11. [Tree 实现](https://www.cnblogs.com/web424/p/6911892.html)
