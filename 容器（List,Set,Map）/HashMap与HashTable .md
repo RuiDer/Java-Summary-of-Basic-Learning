@@ -40,7 +40,10 @@ public interface Lock{
 
 ------------------
 ### 我们谈谈锁
-1.可重入锁，ReentrantLock就是可重入锁的意思。
+1.可重入锁，ReentrantLock就是可重入锁的意思。如果锁具备可重入性，则称作为可重入锁。像synchronized和ReentrantLock都是可重入锁，可重入性在我看来实际上表明了锁的分配机制：基于线程的分配，而不是基于方法调用的分配。举个简单的例子，当一个线程执行到某个synchronized方法时，比如说method1，而在method1中会调用另外一个synchronized方法method2，此时线程不必重新去申请锁，而是可以直接执行方法method2。
+
+　　看下面这段代码就明白了：
+  ![]()
 2.可中断锁，Lock就是典型，synchronized不行
 3.公平锁：等待时间久的线程优先。synchronized和Lock都不是。
 4.读写锁
