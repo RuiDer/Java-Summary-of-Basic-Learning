@@ -20,4 +20,28 @@
 ----------
 ## synchronized和Lock的区别
 1. synchronized是java的一个关键字，而Lock是java的一个类接口。
-2. 
+2. synchronized的使用方式`... sychronized(对象锁){ 。。。同步代码块。。}....`;Lock的使用方式：`...Lock lock=new ReentrantLock(); lock.lock();
+try{ code  } catch(){  }finally{ lock.unlock();}...`
+3.synchronized:一旦线程拿到锁，进入同步代码块，其他线程只能干巴巴的等待，直到该线程运行完同步代码块或者遇到异常被JVM强迫释放锁。不易死锁。
+4.Lock实现同步是人为实现，容易造成死锁，所以使用try和finally语句。
+5.```java
+public interface Lock{
+  public void lock();     //获得锁
+  
+  public void unLock();    //释放锁
+  
+  public boolean tryLock();          //尝试获得锁，获得返回true，否则返回false
+  public boolean tryLock(等待时间)；   //同理，在等待时间范围内获得和不获得
+
+  public boolean lockInterruptibly();  //可中断等待的线程，比如A和B一起竞争锁，A获得锁，那么B可以中止等待。
+}
+```
+6.从上面可以看出来Lock可以实现线程的中断，判断是否获得锁；比如判断没有获得锁就可以做其他的事，大大提升办事效率，而synchronized不行
+
+------------------
+### 我们谈谈锁
+1.可重入锁，ReentrantLock就是可重入锁的意思。
+2.可中断锁，Lock就是典型，synchronized不行
+3.公平锁：等待时间久的线程优先。synchronized和Lock都不是。
+4.读写锁
+
